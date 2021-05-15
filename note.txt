@@ -1,0 +1,8 @@
+A FINIR:
+	- Z-index fenetre qui bouge
+	- Fix beug fenetre qui bouge quand ont agrandi et bouge la page
+A FAIRE;
+	- Navigateur style "Comme la console"
+	- Plusieur page navigateur
+	- Page 404, 403
+	_ Page resolution
