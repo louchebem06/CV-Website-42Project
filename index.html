@@ -9,11 +9,18 @@
 <body>
 	<p class="visible">This website and optimize for use on firefox and a resolution of 1320 * 920<br>This screen is too small, please enlarge the window or change the support.</p>
 	<div class="body-imac">
-	<div class="eye"></div>
+	<a href="https://profile.intra.42.fr/users/bledda" target="_blank"><div class="eye"></div></a>
 	<div class="imac">
+		<div class="icon">
+			<a href="https://github.com/louchebem06" target="_blank"><div class="logo"><img src="src/img/github.svg" alt="Logo Github"><p>Github</p></div></a>
+			<div class="logo" onclick="openCLI()"><img src="src/img/docs.png" alt="Logo Docs"><p>CV.sh</p></div>
+			<div class="logo"><img src="src/img/google.png" alt="Logo Google"><p>Google</p></div>
+			<div class="logo"><img src="src/img/youtube.png" alt="Logo Youtube"><p>Youtube</p></div>
+			<div class="logo"><img src="src/img/iterm.png" alt="Logo Iterm"><p>Iterm</p></div>
+		</div>
 		<div class="console" id="console">
 			<div class="top-bar">
-				<div class="btn red"></div>
+				<div class="btn red" id="closecli" onclick="closeCLI()"></div>
 				<div class="btn yellow"></div>
 				<div class="btn green"></div>
 				<p>42 STUDENT EDITOR</p>
@@ -41,6 +48,9 @@
 						<p>18</p>
 						<p>19</p>
 						<p>20</p>
+						<p>21</p>
+						<p>22</p>
+						<p>23</p>
 					</div>
 				</div>
 				<div class="body">
@@ -50,23 +60,23 @@
 */
 
 &lt;?php
-	$info <span class="color-red">=</span> <span class="color-blue">array</span>(
-		<span class="color-yellow">"experience"</span> <span class="color-red">=</span> <span class="color-blue">array</span>(
-			<span class="color-yellow">'Master Butcher'</span> <span class="color-red">=></span> "Boucherie de la gare"
-		)
-		<span class="color-yellow">"skill"</span> <span class="color-red">=</span> <span class="color-blue">array</span>(
-			<span class="color-yellow">'C'</span> 	<span class="color-red">=></span> <span class="color-yellow">"++",</span>
-			<span class="color-yellow">'JS'</span> 	<span class="color-red">=></span> <span class="color-yellow">"+",</span>
-			<span class="color-yellow">'PHP'</span> 	<span class="color-red">=></span> <span class="color-yellow">"+++",</span>
-			<span class="color-yellow">'CSS'</span> 	<span class="color-red">=></span> <span class="color-yellow">"+++",</span>
-			<span class="color-yellow">'HTML'</span> 	<span class="color-red">=></span> <span class="color-yellow">"+++"</span>
+	$info <span class="color-red">=</span>	<span class="color-blue">array</span>(
+		<span class="color-yellow">"experience"</span> 	<span class="color-red">=</span> <span class="color-blue">array</span>(
+			<span class="color-yellow">'Butcher's chef'</span>	<span class="color-red">=></span> <span class="color-yellow">"Boucherie de la gare"</span>
 		),
+		<span class="color-yellow">"skill"</span>			<span class="color-red">=</span> <span class="color-blue">array</span>(
+			<span class="color-yellow">'C'</span> 				<span class="color-red">=></span> <span class="color-yellow">"++",</span>
+			<span class="color-yellow">'JS'</span> 				<span class="color-red">=></span> <span class="color-yellow">"+",</span>
+			<span class="color-yellow">'PHP'</span> 				<span class="color-red">=></span> <span class="color-yellow">"+++",</span>
+			<span class="color-yellow">'CSS'</span> 				<span class="color-red">=></span> <span class="color-yellow">"+++",</span>
+			<span class="color-yellow">'HTML'</span>			<span class="color-red">=></span> <span class="color-yellow">"+++"</span>
+		)
 	);
 
-	<span class="color-blue">echo</span> <span class="color-yellow">"First Name : Bryan";</span>
-	<span class="color-blue">echo</span> <span class="color-yellow">"Lasr Name : Ledda";</span>
-	<span class="color-blue">echo</span> <span class="color-yellow">"School : 42 Nice";</span>
-	<span class="color-blue">echo</span> <span class="color-yellow">"Age : 26";</span>
+	<span class="color-blue">echo</span> <span class="color-yellow">"First Name	: Bryan"</span>;
+	<span class="color-blue">echo</span> <span class="color-yellow">"Lasr Name	: Ledda"</span>;
+	<span class="color-blue">echo</span> <span class="color-yellow">"School		: 42 Nice"</span>;
+	<span class="color-blue">echo</span> <span class="color-yellow">"Age			: 26"</span>;
 
 	<span class="color-blue">var_dump</span>($info);
 ?>

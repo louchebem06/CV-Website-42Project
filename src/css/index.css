@@ -8,9 +8,16 @@
     letter-spacing: 1px;
 }
 
+a
+{
+	color: currentColor;
+	text-decoration: none;
+}
+
 body
 {
 	background-color: black;
+	overflow: hidden;
 }
 
 .visible
@@ -65,6 +72,8 @@ body
 	border-radius: 10px 10px 0 0;
 	padding-top: 5px;
 	margin-top: 10px;
+	z-index: 2;
+	position: relative;
 }
 
 .end-imac
@@ -73,6 +82,8 @@ body
 	height: 150px;
 	border-radius: 0 0 20px 20px;
 	background-color: #B5E0F0;
+	z-index: 10;
+	position: relative;
 }
 
 .end-imac img
@@ -93,6 +104,7 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .imac
@@ -104,16 +116,19 @@ body
 	display: block;
 	margin: auto;
 	margin-top: 10px;
+	z-index: 10;
+	position: relative;
 }
 
 .console
 {
 	width: 720px;
-	height: 550px;
-	top:	25%;
-	left: 	25%;
+	height: 100%;
 	cursor: move;
 	position: absolute;
+	z-index: 0;
+	visibility: hidden;
+	-webkit-filter: blur(0px);
 }
 
 .top-bar, .end-bar
@@ -157,8 +172,8 @@ body
 
 .left
 {
-	width: 4%;
-	padding-right: 10px;
+	width: 6%;
+	height: 405px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: black;
@@ -170,23 +185,26 @@ body
 {
 	opacity: 50%;
 	background-color: black;
-	width: 94.6%;
+	width: 94%;
 	float: right;
-	padding-top: 4px;
-	line-height: 13px;
-	padding-bottom: 8px;
+	height: 405px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .left-text p, .body-text p, .body-text pre
 {
 	color: white;
 	text-align: right;
+	margin-right: 10px;
 }
 
 .body-text p, .body-text pre, .body-text span
 {
+	padding-top: 4px;
 	text-align: left;
-	font-size: 14px;
+	line-height: 15px;
+	margin-left: 10px
 }
 
 .btn
@@ -208,6 +226,7 @@ body
 .red
 {
 	background-color: red;
+	cursor: pointer;
 }
 
 .green
@@ -228,4 +247,25 @@ body
 .color-yellow
 {
 	color: yellow;
+}
+
+.logo
+{
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+	margin: 15px;
+	cursor: pointer;
+}
+
+.logo img
+{
+	width: 50px;
+	height: 50px;
+}
+
+.logo p
+{
+	color: white;
+	text-align: center;
 }

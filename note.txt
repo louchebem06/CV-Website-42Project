@@ -1,8 +1,13 @@
-A FINIR:
-	- Z-index fenetre qui bouge
-	- Fix beug fenetre qui bouge quand ont agrandi et bouge la page
 A FAIRE;
 	- Navigateur style "Comme la console"
 	- Plusieur page navigateur
 	- Page 404, 403
-	_ Page resolution
+	- Page resolution
+	- Faire effect fenetre qui se ferme et s'ouvre via icone
+	- Interaction button
+	- change z-index plusieur fenetre
+	- Fond ecran animed
+	
+Fake Shell
+App Youtube
+App Google
