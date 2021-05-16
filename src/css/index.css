@@ -1,3 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   index.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/05/16 01:02:26 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/16 01:23:27 by bledda           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+	General settings
+*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700);
 
 *
@@ -20,11 +35,17 @@ body
 	overflow: hidden;
 }
 
+/*
+	message Responsive
+*/
 .visible
 {
 	display: none;
 }
 
+/*
+	Responsive
+*/
 @media (max-width: 1320px)
 {
 	body
@@ -63,6 +84,9 @@ body
 	}
 }
 
+/*
+	Content iMac
+*/
 .body-imac
 {
 	width: 1320px;
@@ -76,6 +100,9 @@ body
 	position: relative;
 }
 
+/*
+	Footer iMac
+*/
 .end-imac
 {
 	width: 1320px;
@@ -94,6 +121,9 @@ body
 	padding-top: 30px;
 }
 
+/*
+	Webcam
+*/
 .eye
 {
 	background-color: black;
@@ -107,6 +137,9 @@ body
 	cursor: pointer;
 }
 
+/*
+	Setting screen iMac
+*/
 .imac
 {
 	width: 1280px;
@@ -120,6 +153,10 @@ body
 	position: relative;
 }
 
+
+/*
+	CLI
+*/
 .console
 {
 	width: 720px;
@@ -207,6 +244,9 @@ body
 	margin-left: 10px
 }
 
+/*
+	Button windows
+*/
 .btn
 {
 	width: 15px;
@@ -218,6 +258,9 @@ body
 	margin-top: 7px;
 }
 
+/*
+	Color button windows
+*/
 .yellow
 {
 	background-color: yellow;
@@ -234,6 +277,9 @@ body
 	background-color: green;
 }
 
+/*
+	Syntac color php
+*/
 .color-red
 {
 	color: red;
@@ -249,6 +295,9 @@ body
 	color: yellow;
 }
 
+/*
+	Logo Apple iMac
+*/
 .logo
 {
 	width: 50px;

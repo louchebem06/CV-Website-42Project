@@ -11,3 +11,4 @@ A FAIRE;
 Fake Shell
 App Youtube
 App Google
+Mail
