@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 01:02:26 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/16 01:23:27 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/16 15:08:59 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,6 @@ body
 */
 @media (max-width: 1320px)
 {
-	body
-	{
-		background-color: white;
-	}
-
 	.body-imac
 	{
 		display: none !important;
@@ -61,17 +56,46 @@ body
 	{
 		display: contents !important;
 		text-align: center !important;
-		background-color: red !important;
+		color: white;
 	}
 }
 
-@media (max-height: 920px)
+@media (max-height: 775px)
 {
-	body
+	.eye
 	{
-		background-color: white;
+		display: none !important;
 	}
 
+	.body-imac
+	{
+		background-color: black !important;
+		padding-top: 0 !important;
+		margin-top: 0 !important;
+	}
+
+	.imac
+	{
+		border-radius: 10px 10px 10px 10px !important;
+		margin-top: 0 !important;
+	}
+
+	.end-imac
+	{
+		background-color: black !important;
+	}
+}
+
+@media (max-height: 736px)
+{
+	.imac
+	{
+		margin-top: -15px !important;
+	}
+}
+
+@media (max-height: 720px)
+{
 	.body-imac
 	{
 		display: none !important;
@@ -80,7 +104,7 @@ body
 	{
 		display: contents !important;
 		text-align: center !important;
-		background-color: red !important;
+		color: white;
 	}
 }
 

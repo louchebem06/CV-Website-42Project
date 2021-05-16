@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 01:08:20 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/16 01:37:11 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/16 14:21:25 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,25 @@ var closecli = document.getElementById("closecli");
 function closeCLI()
 {
   cli.style.cursor = 'wait';
+  cli.style.zIndex = '0';
   closecli.style.cursor = 'wait';
   cli.style.webkitFilter = 'blur(1px)';
-  setTimeout(function(){cli.style.visibility = 'hidden';}, 150);
+  setTimeout(visibilityOff(cli), 150);
 }
 
 function openCLI()
 {
   cli.style.cursor = 'move';
+  cli.style.zIndex = '5';
   closecli.style.cursor = 'pointer';
   cli.style.visibility = 'visible';
   cli.style.webkitFilter = 'blur(0px)';
 }
 
+function visibilityOff(elmnt)
+{
+  elmnt.style.visibility = 'hidden';
+}
 
 //Source: https://www.w3schools.com/howto/howto_js_draggable.asp
 dragElement(cli);

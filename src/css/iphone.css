@@ -1,0 +1,298 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   iphone.css                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/05/16 15:19:18 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/16 17:23:59 by bledda           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+  General settings
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700);
+
+*
+{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+a
+{
+  color: currentColor;
+  text-decoration: none;
+}
+
+body
+{
+  background-color: black;
+  overflow: hidden;
+}
+
+/*
+  Responsive
+*/
+@media (max-width: 348px)
+{
+  .iphone-x, .capteur, .encoche, .color-btn
+  {
+    display: none !important;
+  }
+  .contain-iphone-x
+  {
+    background-color: white;
+    mask-image: url(../img/apple-logo.svg);
+    mask-size: 50%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+@media (max-height: 700px)
+{
+  .iphone-x, .capteur, .encoche, .color-btn
+  {
+    display: none !important;
+  }
+  .contain-iphone-x
+  {
+    background-color: white;
+    mask-image: url(../img/apple-logo.svg);
+    mask-size: 50%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.contain-iphone-x
+{
+  height: 700px;
+  width: 348px;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.iphone-x, .iphone-x2, .iphone-x-screen
+{
+  position: block;
+  margin: auto;
+  display: flex;
+  border-radius: 40px;
+}
+
+.iphone-x
+{
+  height: 694px;
+  width: 342px;
+  background-color: #d8d8da;
+}
+
+.iphone-x2
+{
+  height: 684px;
+  width: 332px;
+  background-color: #656566;
+}
+
+.iphone-x-screen
+{
+  height: 664px;
+  width: 312px;
+  background-image: url(../img/bg-ios-iphone-x.jpg);
+  background-size: 100%;
+}
+
+.support-webcam
+{
+  height: 22px;
+  width: 150px;
+  margin: auto;
+  margin-top: 0;
+  border-radius: 0 0 10px 10px;
+  background-color: black;
+  z-index: 2;
+}
+
+.capteur
+{
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background-color: #262626;
+  opacity: 90%;
+  position: fixed;
+  top: 20px;
+}
+
+.capteur0
+{
+  left: 105px;
+}
+
+.capteur1
+{
+  left: 130px;
+}
+
+.capteur2
+{
+  right: 130px;
+  background-color: #001bff;
+  height: 10px;
+  width: 10px;
+  top: 23px;
+}
+
+.capteur3
+{
+  right: 105px;
+}
+
+.enceinte
+{
+  position: fixed;
+  height: 8px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: #767676;
+  opacity: 50%;
+  top: 24px;
+  left: 155px;
+}
+
+.encoche
+{
+  background-color: #bababb;
+  height: 5px;
+  width: 5px;
+  position: fixed;
+}
+
+.encoche0
+{
+  top:60px;
+  left: 3px;
+}
+
+.encoche1
+{
+  top:60px; 
+  right: 3px;
+}
+
+.encoche2
+{
+  bottom:60px;
+  left: 3px;
+}
+
+.encoche3
+{
+  bottom:60px;
+  right: 3px;
+}
+
+.color-btn
+{
+  background-color: #bababb;
+  position: fixed;
+  width: 3px;
+}
+
+.sound
+{
+  height: 20px;
+  top: 85px;
+  left: 0;
+  border-radius: 1.5px 0 0 1.5px;
+}
+
+.plus, .moin
+{
+  height: 50px;
+  left: 0;
+  border-radius: 1.5px 0 0 1.5px;
+}
+
+.plus
+{
+  top: 115px;
+}
+
+.moin
+{
+  top: 175px;
+}
+
+.power
+{
+  height: 90px;
+  top: 120px;
+  right: 0;
+  border-radius: 0 1.5px 1.5px 0;
+}
+
+.apps
+{
+  width: 312px;
+  height: 632px;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+}
+
+.logo
+{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.logo img
+{
+  height: 70px;
+}
+
+#cv
+{
+  cursor: pointer;
+}
+
+.closeBtn
+{
+  position: fixed;
+  cursor: pointer;
+  bottom: 50px;
+  left: 140px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.docs
+{
+  background-color: black;
+  opacity: 85%;
+  border-radius: 40px;
+  width: 312px;
+  height: 664px;
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.txt
+{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}

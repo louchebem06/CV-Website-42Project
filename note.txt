@@ -1,14 +1,4 @@
 A FAIRE;
-	- Navigateur style "Comme la console"
-	- Plusieur page navigateur
 	- Page 404, 403
 	- Page resolution
-	- Faire effect fenetre qui se ferme et s'ouvre via icone
-	- Interaction button
-	- change z-index plusieur fenetre
 	- Fond ecran animed
-	
-Fake Shell
-App Youtube
-App Google
-Mail
